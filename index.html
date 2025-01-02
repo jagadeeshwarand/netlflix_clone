@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="1.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+   
+   
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+       body{
+        margin: 0;
+       }
+       .home{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right,black,transparent),url(4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+       .top-section{
+        margin-left: 10%;
+        
+        width: 80%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            height: 200%;
+            width: auto;
+        }
+        .top-right{
+            
+            select{
+                width: 130px;
+                height: 40px;
+                padding-left: 25px;
+                background: none;
+                color: wheat;
+                option{
+                   color: black;
+                }
+            }
+            svg{
+                position: relative;
+                left: 30px;
+                color: white;
+            }
+            button{
+                height: 40px;
+                width: 100px;
+                background-color: red;
+                border-radius: 20px;
+            }
+        }
+    }
+    /* .txt{
+        
+        color: white;
+        width: 50%;
+        
+        padding-left: 25%;
+        font-size: 2rem;
+        padding: 0 2rem 2rem 2rem;
+        text-align: center;
+        flex-direction: column;
+        margin-left: 23%;
+        margin-top: 6%;
+        p{
+            font-size: 1.3rem;
+        }
+        .txt1{
+            display: flex;
+            justify-content: 1px;
+            color: white;
+            justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            input{
+                
+                width: 50%;
+                color: white;
+                height: 50px;
+                backdrop-filter: blur(10px);
+                background-color: transparent;
+                border-color: rgba(240, 236, 236, 0.478);
+                padding-block: 1px;
+                padding-inline: 2px;
+                
+
+            }
+            input::placeholder{
+                color: rgb(236, 227, 227);
+                padding-left: 10%;
+            }
+            button{
+                
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                display: flex;
+                color: white;
+                height: 58px;
+                
+                background-color: red;
+                border-radius: 5px;
+                margin-left: 20px;
+                img{
+                    width: 20px;
+                    flex: inherit;
+                    opacity: 0.5;
+                    color: black;
+                    background: transparent;
+                }
+            }
+        }
+    } */
+    .movie-frame{
+        margin-top: 0%;
+        height: 100%;
+        width: 100%;
+        background-color:black;
+        color: white;
+        
+    }
+    .p2{
+           padding-top: 2%;
+            margin-left: 10%;
+            font-size: 1.5rem;
+        }
+        .watch{
+            margin-left: 10%;
+            display: flex;
+            gap: 2%;
+            select{
+                height: 35px;
+                width: 100px;
+                background: none;
+                background-color: rgba(189, 184, 197, 0.152);
+                color: white;
+                backdrop-filter: blur(2px);
+                border-radius: 5px;
+                align-items: center;
+                
+                padding-left: 8px;
+                option{
+                    background-color: rgba(0, 0, 0, 0.815);
+                    color: white;
+                    padding: 10px;
+                    font-size: 16px;
+                    border: none;
+                
+
+                }
+                
+            }
+        }
+        .watch2{
+                    margin-left: 10%;
+                }
+        /* .movies{
+            margin-left: 10%;
+            margin-top: 2%;
+            display: flex;
+            gap: 3%;
+            img{
+                flex: 0 0 10%;
+                flex-wrap: wrap;
+                height: 300px;
+                width: 250px;
+                border-radius: 10px;
+            }
+        } */
+        .movies {
+            margin-left: 8.5%;
+            margin-top: 2%;
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    
+}
+
+.movies img {
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    
+}
+
+.movies img:hover {
+    transform: scale(1.1);
+}
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <!-- home page started  -->
+        <div class="home">
+            <div class="top-section">
+                <img src="3.png" alt="" height="100px" width="100px">
+                <div class="top-right">
+                   
+                    <div>
+                        <form action="document.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                                <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                                <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+                              </svg>
+                            <select name="" id="">
+                                <option value="">English</option>
+                                <option value="">Tamil</option>
+                                <option value="">Kanada</option>
+                            </select>
+                             <button class="b1">Sign in</button>
+                        </form>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="home-content">
+                <h1>Unlimited movies, TV shows and more</h1>
+                <h3>Starts at ₹149. Cancel at any time.</h3>
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="get-started">
+                    <input type="email" name="" id="" placeholder="Email address">
+                    <button>Get Started </button>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div class="movie-frame">
+        <div class="p2">
+            <p>Trending Now</p>
+            
+        </div>
+        <div class="watch">
+            <select name="" id="">
+                <option value="">India</option>
+                <option value="">Global</option>
+            </select>
+            <select name="" id="watch2">
+                <option value="">Movies</option>
+                <option value="">TV shows</option>
+            </select>
+        </div>
+        <div class="movies">
+            <img src="m1.jpg" alt="">
+            <img src="m2.jpg" alt="">
+            <img src="m3.jpg" alt="">
+            <img src="m5.jpg" alt="">
+        </div>
+        <h1>More reasons to join</h1>
+        
+        <div class="join">
+            
+            <div class="item1">
+                <h1>Enjoy on your TV.</h1>
+                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                <i class="bi bi-tv icon"></i>
+            </div>
+            <div class="item2">
+                <h1>Download your shows to watch offline.</h1>
+                <p>Save your favourites easily and always have something to watch.</p>
+                <i class="bi bi-download icon"></i>
+            </div>
+            <div class="item3">
+                <h1>Watch everywhere.</h1>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
+                <i class="bi bi-phone icon"></i>
+            </div>
+            <div class="item4">
+                <h1>Create profiles for kids.</h1>
+                <p>Send kids on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+                <i class="bi bi-people icon"></i>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
